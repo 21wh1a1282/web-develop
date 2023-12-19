@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Background Video - Easy Tutorials</title>
+    <link rel="stylesheet" href="wbp.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .banner {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-height: 50px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #426da1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        /* Change the color of the text in the <ul> */
+        .navbar ul {
+            color: #ff0000; /* Change to your desired color */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar ul li a {
+            color: #000; /* Change text color to black */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        /* Change text color on hover */
+        .navbar ul li a:hover {
+            color: #fff; /* Change text color to white on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <img class="logo" src="bal.jpeg">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">Dance Forms</a></li>
+                <li><a href="#">Learn To Dance</a></li>
+                <li><a href="#">Our Dancers</a></li>
+                <li><a href="#">Support Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>ABCD</h1>
+            <p>ANYBODY CAN DANCE</p>
+            <div>
+                <button id="registerBtn" type="button">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            // Replace 'next_page.html' with the URL of the next page
+            window.location.href = 're.html';
+        });
+    </script>
+           
+</body>
+
+</html>
